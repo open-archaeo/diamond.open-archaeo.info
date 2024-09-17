@@ -75,6 +75,15 @@ Thumbs.db
 *.glo
 *.ist
 
+# Jekyll #
+#########
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+
 # Other #
 #########
 
