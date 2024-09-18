@@ -1,0 +1,57 @@
+---
+layout: base
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% assign journals = site.journals %}
+
+  {%- if journals.size > 0 -%}
+
+    <table>
+      <tr>
+        <th scope="col">Journal</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Languages</th>
+        <th scope="col">ISSN</th>
+      </tr>
+
+    {%- for journal in journals %}
+
+      <tr>
+        <td>
+          <cite>
+            <a href="{{ journal.url }}" title="{{ journal.title }} home page">
+              {{ journal.title }}
+            </a>
+          </cite>
+        </td>
+        <td>{{ journal.publisher }}</td>
+        <td>
+          {% assign languages = journal.languages %}
+          {%- if languages.size > 1 -%}
+          <ul style="list-style-type: none; margin: 0;">
+              {%- for lang in languages %}
+                <li>{% include language.html lang=lang %}</li>
+              {%- endfor %}
+            </ul>
+          {%- else -%}
+            {% include language.html lang=languages.first %}
+          {%- endif -%}
+        </td>
+        <td>{% include issn.html issn=journal.issn %}</td>
+      </tr>
+
+    {%- endfor %}
+
+    </table>
+
+  {%- endif -%}
+
+</div>
+
