@@ -1,0 +1,25 @@
+.center {
+  text-align: center;
+}
+
+[data-tooltip].icon {
+  border-bottom: 0;
+}
+
+/* Table sorting */
+button.sort,
+button.sort:focus {
+  border: 0;
+}
+
+.sort:after {
+  content: "\21C5";
+}
+
+.sort.desc:after {
+  content: "\2191";
+}
+
+.sort.asc:after {
+  content: "\2193";
+}

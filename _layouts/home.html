@@ -12,45 +12,70 @@ layout: base
   {% assign journals = site.journals %}
 
   {%- if journals.size > 0 -%}
+    <div id="journals-list">
 
-    <table>
-      <tr>
-        <th scope="col">Journal</th>
-        <th scope="col">Publisher</th>
-        <th scope="col">Languages</th>
-        <th scope="col">ISSN</th>
-      </tr>
+      <article>
 
-    {%- for journal in journals %}
+        <p><noscript><small>Searching and sorting requires a Javascript-enabled browser!</small></noscript></p>
+        <form role="search">
+          <input type="search" class="search" placeholder="Filter..." disabled />
+        </form>
 
-      <tr>
-        <td>
-          <cite>
-            <a href="{{ journal.website }}" title="{{ journal.title }} home page">
-              {{ journal.title }}
-            </a>
-          </cite>
-        </td>
-        <td>{{ journal.publisher }}</td>
-        <td>
-          {% assign languages = journal.languages %}
-          {%- if languages.size > 1 -%}
-          <ul style="list-style-type: none; margin: 0;">
-              {%- for lang in languages %}
-                <li>{% include language.html lang=lang %}</li>
-              {%- endfor %}
-            </ul>
-          {%- else -%}
-            {% include language.html lang=languages.first %}
-          {%- endif -%}
-        </td>
-        <td>{% include issn.html issn=journal.issn %}</td>
-      </tr>
+        <table>
+          <tr>
+            <th scope="col">
+              <button class="outline sort" data-sort="model" title="Sort by open access model" disabled></button>
+            </th>
+            <th scope="col">
+              <strong>Journal</strong>
+              <button class="outline sort" data-sort="title" title="Sort by title" disabled></button>
+            </th>
+            <th scope="col">
+              <strong>Publisher</strong>
+              <button class="outline sort" data-sort="publisher" title="Sort by publisher" disabled></button>
+            </th>
+            <th scope="col"><strong>Languages</strong></th>
+            <th scope="col"><strong>ISSN</strong></th>
+          </tr>
 
-    {%- endfor %}
+          <tbody class="list">
+            {%- for journal in journals %}
 
-    </table>
+              <tr>
+                <td class="model center">
+                  {% include model.html model=journal.model %}
+                </td>
+                <td class="title" data-title="{{ journal.title }}">
+                  <cite>
+                    <a href="{{ journal.website }}" title="{{ journal.title }} home page">
+                      {{ journal.title }}
+                    </a>
+                  </cite>
+                </td>
+                <td class="publisher">{{ journal.publisher }}</td>
+                <td>
+                  {% assign languages = journal.languages %}
+                  {%- if languages.size > 1 -%}
+                  <ul style="list-style-type: none; margin: 0;">
+                      {%- for lang in languages %}
+                        <li>{% include language.html lang=lang %}</li>
+                      {%- endfor %}
+                    </ul>
+                  {%- else -%}
+                    {% include language.html lang=languages.first %}
+                  {%- endif -%}
+                </td>
+                <td>{% include issn.html issn=journal.issn %}</td>
+              </tr>
 
+            {%- endfor %}
+          </tbody>
+
+        </table>
+
+      </article>
+
+    </div>
   {%- endif -%}
 
 </div>

@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" data-theme="light">
 
-  {%- include head.html -%}
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>{{ site.title | escape }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+
+    <link rel="stylesheet" href="{{ 'css/pico.cyan.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/styles.css' | relative_url }}">
+
+    <script src="{{ 'js/list.min.js' | relative_url }}" defer></script>
+    <script src="{{ 'js/scripts.js' | relative_url }}" defer></script>
+
+  </head>
 
   <body>
 
-    {%- include header.html -%}
+    <header class="container">
+      <hgroup>
+        <h1>{{ site.title | escape }}</h1>
+        <p>{{ site.description | escape }}</p>
+      </hgroup>
+    </header>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="container">
+      {{ content }}
     </main>
 
-    {%- include footer.html -%}
+    <footer class="container"></footer>
 
   </body>
 

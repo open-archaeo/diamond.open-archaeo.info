@@ -1,0 +1,9 @@
+{% case include.model %}
+  {% when "diamond" %}
+    <span role="img" class="icon" data-tooltip="Diamond open access" data-placement="left">💎</span>
+  {% when "gold" %}
+    <span role="img" class="icon" data-tooltip="Gold open access" data-placement="left">🪙</span>
+  {% else %}
+    <span role="img" class="icon" data-tooltip="Unknown open access model" data-placement="left">❓</span>
+{% endcase %}
+

@@ -18,17 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: publish.open-archaeo.info
+title: 💎 Diamond Archaeology
 # email: your-email@example.com
 github_username: open-archaeo
-description: >
-    Open venues for publishing, reviewing and curating archaeological research.
+description: Open venues for publishing, reviewing and curating archaeological research
 
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
