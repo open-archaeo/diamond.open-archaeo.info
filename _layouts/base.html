@@ -20,13 +20,8 @@
 
   <body>
 
-    <header class="container">
-      <hgroup>
-        <h1>{{ site.title | escape }}</h1>
-        <p>{{ site.description | escape }}</p>
-      </hgroup>
-    </header>
-
+    {% include header.html %}
+    
     <main class="container">
       {{ content }}
     </main>
