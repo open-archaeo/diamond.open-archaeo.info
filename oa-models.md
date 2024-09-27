@@ -1,11 +1,10 @@
 ---
 layout: page
-title: OA Models Reference Guide
+title: OA Models
 permalink: /oa-models/
 ---
 
-## OA Models Reference Guide
-
+## OA Models
 Open Access (OA) is a set of principles and practices that encourage unrestricted distribution of published scientific work.
 Various models have emerged for achieving this aim, which are sustained in different ways and with different stakeholders' needs in mind.
 
@@ -39,7 +38,7 @@ Works published in this manner are sometimes presented using some proprietary re
 
 ### Other relevant concepts and initiatives:
 
-🗄️ **[FAIR](https://www.go-fair.org/)** is an acronym for Findable, Accessible, Interoperable and Reusable, and is typically applied in contexts of data-sharing, which is another important pillar of the broader Open Science movement.
+🗄️ **[FAIR](https://www.go-fair.org/fair-principles/)** is an acronym for Findable, Accessible, Interoperable and Reusable, and is typically applied in contexts of data-sharing, which is another important pillar of the broader Open Science movement.
 
 🗃️ **Open Metadata** comprises a series of initiatives to ensure greater access to scholarly publishing metadata.
 For instance, [Open Citations](https://i4oc.org/) and [Open Abstracts](https://i4oa.org/) promote sharing of structured metadata elements in machine-readable formats.
