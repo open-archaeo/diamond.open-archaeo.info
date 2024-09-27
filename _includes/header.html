@@ -1,16 +1,16 @@
 <header class="container">
-    <nav>            
+    <nav aria-label="Main navigation">            
         <ul>
             {% for item in site.data.nav-main.left -%}
             <li>
-                <a href="{{ item.link }}">{{ item.name  }}</a>
+                <a {% if page.url contains item.link %} aria-current="page"{% endif %} href="{{ item.link }}">{{ item.name  }}</a>
             </li>
             {%- endfor %}
         </ul>
         <ul>
             {% for item in site.data.nav-main.right -%}
             <li>
-                <a href="{{ item.link }}">{{ item.name  }}</a>
+                <a {% if page.url contains item.link %} aria-current="page"{% endif %} href="{{ item.link }}">{{ item.name  }}</a>
             </li>
             {%- endfor %}
         </ul>

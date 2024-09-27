@@ -8,6 +8,10 @@ nav ol {
   column-gap: 0.5rem;
 }
 
+nav a[aria-current="page"] {
+  font-weight: 600;
+}
+
 /* Others */
 .center {
   text-align: center;
