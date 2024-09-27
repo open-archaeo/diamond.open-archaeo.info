@@ -1,0 +1,22 @@
+<header class="container">
+    <nav>            
+        <ul>
+            {% for item in site.data.nav-main.left -%}
+            <li>
+                <a href="{{ item.link }}">{{ item.name  }}</a>
+            </li>
+            {%- endfor %}
+        </ul>
+        <ul>
+            {% for item in site.data.nav-main.right -%}
+            <li>
+                <a href="{{ item.link }}">{{ item.name  }}</a>
+            </li>
+            {%- endfor %}
+        </ul>
+    </nav>
+      <hgroup>
+        <h1>{{ site.title | escape }}</h1>
+        <p>{{ site.description | escape }}</p>
+      </hgroup>
+</header>
