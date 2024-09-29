@@ -4,7 +4,6 @@ title: OA Models
 permalink: /oa-models/
 ---
 
-## OA Models
 Open Access (OA) is a set of principles and practices that encourage unrestricted distribution of published scientific work.
 Various models have emerged for achieving this aim, which are sustained in different ways and with different stakeholders' needs in mind.
 
