@@ -1,5 +1,6 @@
 ---
-title: ArcheoSciences, revue d'Archéométrie
+title: ArcheoSciences
+subtitle: Revue d'Archéométrie
 model: diamond
 embargo: 12
 peer_reviewed: true
