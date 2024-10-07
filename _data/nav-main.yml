@@ -4,3 +4,5 @@ left:
 right:
   - name: OA Models
     link: /oa-models
+  - name: Contributing
+    link: /contributing
