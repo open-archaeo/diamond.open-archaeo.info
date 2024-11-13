@@ -21,6 +21,15 @@ nav a[aria-current="page"] {
   border-bottom: 0;
 }
 
+/* Table styles */
+.languages {
+  padding-left: 0;
+}
+
+.languages li::marker {
+  content: "";
+}
+
 /* Table sorting */
 button.sort,
 button.sort:focus {
@@ -39,12 +48,10 @@ button.sort:focus {
   content: "\2193";
 }
 
-
 @media screen and (max-width: 720px) {
   .table-container {
     overflow-x:auto;
   }
-
 
   table .title,
   table .journal-col {

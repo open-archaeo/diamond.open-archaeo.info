@@ -57,9 +57,9 @@ layout: base
                   <td>
                     {% assign languages = journal.languages %}
                     {%- if languages.size > 1 -%}
-                    <ul style="list-style-type: none; margin: 0;">
+                      <ul class="languages">
                         {%- for lang in languages %}
-                          <li>{% include language.html lang=lang %}</li>
+                        <li>{% include language.html lang=lang %}</li>
                         {%- endfor %}
                       </ul>
                     {%- else -%}
