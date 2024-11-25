@@ -1,5 +1,5 @@
 ---
-title: Layers: Archeologia Territorio Contesti
+title: "Layers: Archeologia Territorio Contesti"
 model: diamond
 peer_reviewed: true
 website: https://ojs.unica.it/index.php/layers
