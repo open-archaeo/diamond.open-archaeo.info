@@ -4,7 +4,7 @@ title: Contributing
 permalink: /contributing/
 ---
 
-This is a collectively maintained project. The code and data are hosted on GitHub at [open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info). You can also reach us in our Matrix room at `#publishing.open-archaeo:archaeo.social`
+This is a collectively maintained project. The code and data are hosted on GitHub at [open-archaeo/diamond.open-archaeo.info](https://github.com/open-archaeo/diamond.open-archaeo.info). You can also reach us in our Matrix room at `#diamond.open-archaeo:archaeo.social`
 
 Please submit a pull request or get in touch to create a new item in the list or modify existing records.
 
