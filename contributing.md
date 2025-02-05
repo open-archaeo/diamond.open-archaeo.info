@@ -32,3 +32,11 @@ If the journal has an embargo period, please add the optional `embargo` field sp
 This website is meant to showcase the excellent work being done to make archaeological knowledge more publicly accessible. The scope therefore includes archaeological journals, data repositories, open peer-review platforms and other relevant services that adhere to non-restrictive OA principles.
 
 Please open a [GitHub Issue](https://github.com/open-archaeo/diamond.open-archaeo.info/issues) to share any critical feedback or to suggest any new features.
+
+## Similar Work
+This project overlaps with a few other similar initiatives, including:
+
+- The [Database of Academia Friendly jourNals in Ecology and Evolution [DAFNEE]](https://dafnee.isem-evolution.fr/)
+- Alain Queffelec's [list of open access archaeology journals](https://github.com/AQueff/OA-Archaeology/)
+- Doug Rocks-Macqueen's [list of archaeology journals](https://dougsarchaeology.wordpress.com/list-of-archaeology-journals/)
+- The [Wikipedia list of archaeology journals](https://en.wikipedia.org/wiki/List_of_archaeology_journals)
