@@ -7,7 +7,7 @@ issn: 2535-6194
 publisher: University of Oslo
 languages:
 - no
-- se
+- sv
 - da
 - fi
 - en
